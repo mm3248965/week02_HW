@@ -135,8 +135,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 /* 上面為 CSS reset */
+
 
 body {
 	font-family: "Bruno Ace SC", sans-serif;
@@ -147,7 +147,7 @@ body {
 *::before,
 *::after {
 	box-sizing: border-box;
-	outline: solid 1px;
+	/* outline: solid 1px; */
 }
 
 /* color: inherit; 用意？ */
@@ -158,17 +158,20 @@ a {
 }
 
 img {
-	display: block;
-}
-
-/* 寫法2
-img {
 	max-width: 100%;
 	height: auto;
 	vertical-align: middle;
+}
+
+/* 
+寫法2
+img {
+	display: block;
 } */
 
+
 /* 以上為對標籤的設定 */
+
 
 
 /* layout */
@@ -187,7 +190,7 @@ img {
 
 .banner {
 	background-color: black;
-	color :#d1d1d1;
+	color: #d1d1d1;
 }
 
 /* span標籤是行內元素 */
@@ -201,15 +204,81 @@ img {
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: white;
+	padding: 160px 0;
 }
 
 .intro-desc {
 	width: 526px;
 }
 
+.about {
+	padding: 160px 0;
+}
+
+.about-list {
+	width: 636px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.about-list li {
+	border: 1px solid #E3E3E3;
+	box-shadow: 4px 4px 4px 0px #00000014;
+	padding: 16px;
+	width: 48%;
+}
+
+/* 方法二 用計算的
+.about-list li {
+	width: calc(50%-12px);
+} */
+
+/* 方法三 用 gap 寫在外層 about-list */
+
+.about-desc {
+	width: 526px;
+}
+
+.contact {
+	background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+	padding: 96px;
+	color: white;
+	
+}
+
+.contact-img {
+	width: 100px;
+	height: 100px;
+}
+
+.social-link {
+	border-radius: 40px;
+}
+
+.social-link:hover {
+	box-shadow: 0px 0px 16px 3px #9094FFE5;
+	transition: 1s;
+}
+
+.project {
+	padding: 160px 0px;
+}
+
+.project-title {
+	width: 746px;
+	margin-left: auto;
+}
+
+.footer {
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 40px 0px;
+}
+
 
 /* component */
-.btn{
+.btn {
 	padding: 12px 24px;
 	border-radius: 32px;
 }
@@ -217,6 +286,11 @@ img {
 .btn-light {
 	background: white;
 	color: black;
+}
+
+.btn-dark {
+	background: black;
+	color: white;
 }
 
 
@@ -257,14 +331,66 @@ img {
 	display: flex;
 }
 
-.justify-content-end{
+.flex-column {
+	flex-direction: column;
+}
+
+.justify-content-between {
+	justify-content: space-between;
+}
+
+.justify-content-end {
 	justify-content: end;
+}
+
+.align-items-start {
+	align-items: start;
 }
 
 .align-items-center {
 	align-items: center;
 }
 
+.ml-1 {
+	margin-left: 4px;
+}
+
+.mr-4 {
+	margin-right: 16px;
+}
+
+.mr-5 {
+	margin-right: 20px;
+}
+
 .mr-6 {
 	margin-right: 24px;
+}
+
+.mb-1 {
+	margin-bottom: 4px;
+}
+
+.mb-4 {
+	margin-bottom: 16px;
+}
+
+.mb-6 {
+	margin-bottom: 24px;
+}
+
+.mb-7 {
+	margin-bottom: 28px;
+}
+
+.mb-8 {
+	margin-bottom: 32px;
+}
+
+.mb-9 {
+	margin-bottom: 36px;
+}
+
+.gap-6 {
+	gap: 24px;
 }
