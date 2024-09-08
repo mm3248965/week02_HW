@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 上面為 CSS reset */
+
+body {
+	font-family: "Bruno Ace SC", sans-serif;
+	line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	outline: solid 1px;
+}
+
+/* color: inherit; 用意？ */
+a {
+	text-decoration: none;
+	display: inline-block;
+	color: inherit;
+}
+
+img {
+	display: block;
+}
+
+/* 寫法2
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+} */
+
+/* 以上為對標籤的設定 */
+
+
+/* layout */
+
+.header {
+	background-color: black;
+	color: #d1d1d1;
+	padding: 40px 0px;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.banner {
+	background-color: black;
+	color :#d1d1d1;
+}
+
+/* span標籤是行內元素 */
+.banner-name {
+	display: block;
+	text-align: right;
+}
+
+.intro {
+	background-image: url(img/background-img.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+}
+
+.intro-desc {
+	width: 526px;
+}
+
+
+/* component */
+.btn{
+	padding: 12px 24px;
+	border-radius: 32px;
+}
+
+.btn-light {
+	background: white;
+	color: black;
+}
+
+
+
+/* utils */
+
+.container {
+	width: 1296px;
+	margin: auto;
+}
+
+/* guildline */
+.h1 {
+	font-size: 128px;
+}
+
+.h2 {
+	font-size: 64px;
+}
+
+.fs-1 {
+	font-size: 32px;
+}
+
+.fs-2 {
+	font-style: 24px;
+}
+
+.fs-3 {
+	font-size: 20px;
+}
+
+.text-primary {
+	color: #00ffa3;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.justify-content-end{
+	justify-content: end;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.mr-6 {
+	margin-right: 24px;
+}
